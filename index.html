@@ -54,7 +54,7 @@
 
             <div data-ng-repeat="animal in animals.slice(0,3)" class="col-xs-4 col-sm-4">
 
-                <img class="img-thumbnail img_holder" data-ng-src="{{animal.picture}} " data-ng-click="say(animal.sound)">
+                <img class="img-thumbnail img_holder" data-ng-src="{{animal.picture}} " data-ng-click="say(animal.sound);spelling(animal.spelling)">
 
             </div>
 
@@ -64,13 +64,36 @@
 
             <div data-ng-repeat="animal in animals.slice(3,6)" class="col-xs-4 col-sm-4">
 
-                <img class="img-thumbnail img_holder" data-ng-src="{{animal.picture}}" data-ng-click="say(animal.sound)">
+                <img class="img-thumbnail img_holder" data-ng-src="{{animal.picture}}" data-ng-click="say(animal.sound);spelling(animal.spelling)">
+
+            </div>
+
+        </div>
+
+        <div class="row row_spacing">
+
+            <div class="col-xs-2 col-sm-2">
+
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" data-ng-model="showSpelling"> Show spelling ?
+                    </label>
+                  </div>
+
+            </div>
+
+            <div class="col-xs-10 col-sm-10">
+
+                    <blockquote data-ng-show="showSpelling">
+                      <p id="spelling" class="text-center" >Spelling box</p>
+                    </blockquote>
 
             </div>
 
         </div>
 
     </div>
+
 
     <audio id="player" >
 

@@ -15,17 +15,25 @@ angular.module('ngPicture2sound.controllers', [])
 
                 $scope.animals = response.slice(0,6);
 
+                $scope.showSpelling = false;
+
             });
 
             $scope.say = function(soundSrc){
 
-                console.log('here');
+                //console.log('here');
 
                 var audio = angular.element("#player");
                 angular.element("#sound_src").attr("src", soundSrc);
                 audio[0].pause();
                 audio[0].load();
                 audio[0].play();
+            };
+
+            $scope.spelling = function(value){
+
+                angular.element('#spelling').text(value)
+
             }
 
         }
