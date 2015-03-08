@@ -24,8 +24,6 @@ angular.module('ngPicture2sound.controllers', [])
                 var audio = angular.element("#player");
                 angular.element("#sound_src").attr("src", soundSrc);
                 audio[0].pause();
-                //audio[0].currentTime = 0;
-
                 audio[0].load();
                 audio[0].play();
             }
