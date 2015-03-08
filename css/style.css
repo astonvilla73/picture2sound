@@ -7,11 +7,11 @@
     }
 }
 
-@media (min-width: 641px) {
+@media (min-width: 700px) {
     .img_holder {
 
-        width: 150px !important;
-        height: 190px !important;
+        width: 180px !important;
+        height: 210px !important;
         overflow: hidden !important;
     }
 }
