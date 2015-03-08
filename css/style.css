@@ -1,8 +1,8 @@
 .img_holder {
 
-    width:300px;
-    height:275px;
-    overflow:hidden;
+    width:300px !important;
+    height:275px !important;
+    overflow:hidden !important;
 }
 
 .row_spacing {
