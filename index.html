@@ -10,6 +10,17 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
+    <!--[if IE 8]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.0.5/es5-shim.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <style>
+            .ng-hide {
+                display: none !important;
+            }
+        </style>
+    <![endif]-->
+
+
     <!-- jquery -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Bootstrap -->
@@ -44,7 +55,7 @@
 
             <div data-ng-repeat="animal in animals.slice(0,3)" class="col-xs-6 col-sm-4">
 
-                <img class="img-thumbnail img_holder" data-ng-src="{{animal.picture}}">
+                <img class="img-thumbnail img_holder" data-ng-src="{{animal.picture}} " data-ng-click="say(animal.sound)">
 
             </div>
 
