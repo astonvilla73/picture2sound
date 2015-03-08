@@ -54,12 +54,19 @@
 
             <div data-ng-repeat="animal in animals.slice(3,6)" class="col-xs-6 col-sm-4">
 
-                <img class="img-thumbnail img_holder" data-ng-src="{{animal.picture}}">
+                <img class="img-thumbnail img_holder" data-ng-src="{{animal.picture}}" data-ng-click="say(animal.sound)">
 
             </div>
 
         </div>
 
     </div>
+
+    <audio id="player">
+
+      <source id="sound_src" src="" />
+
+    </audio>
+
   </body>
 </html>
