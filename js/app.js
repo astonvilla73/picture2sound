@@ -2,6 +2,7 @@
 
 // Declare webdevtest level module which depends on filters, and services
 angular.module('ngPicture2sound', [
+  'ngResource',
   'ngPicture2sound.filters',
   'ngPicture2sound.services',
   'ngPicture2sound.directives',

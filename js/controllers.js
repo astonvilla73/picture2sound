@@ -2,45 +2,24 @@
 
 /* Controllers */
 
-angular.module('ngPicture2sound.controllers', ['ngRoute'])
+angular.module('ngPicture2sound.controllers', [])
 .run().controller(
 
     "MainController",
     [
-        '$scope', "$location", "$routeParams", 'Promotion',
+        '$scope', "Animals",
 
-        function ($scope, $location, $routeParams, Promotion){
+        function ($scope, Animals) {
 
-            var promoId = $routeParams['promo'];
+            Animals.get().$promise.then(function(response) {
 
-            Promotion.get().$promise.then(function(value) {
+                $scope.animals = response.slice(0,6);
 
-                if (promoId && String(promoId).match(/(promo)?\d+/i)) {
+            })
 
-                    if (!isNumber(promoId)) {
+        }
 
-                        promoId = promoId.slice(5)
-
-                    }
-
-                    $scope.promo = value['promotion_objects'][promoId - 1]
-
-                } else {
-
-                    $scope.promotions = value['promotion_objects'];
-
-                    $scope.getPromo = function (promoId) {
-
-                        $location.search("promo", promoId);
-
-                    }
-
-                }
-
-            });
-
-
-    }]
+    ]
 
 );
 

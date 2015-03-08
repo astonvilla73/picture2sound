@@ -22,6 +22,7 @@
     <![endif]-->
 
     <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-resource.js"></script>
 
     <script src="js/utils.js"></script>
 
@@ -37,7 +38,27 @@
   </head>
   <body>
 
-    <div class="container" data-ng-controller="MainController">
+    <div class="container-fluid" data-ng-controller="MainController">
+
+        <div class="row">
+            <div data-ng-repeat="animal in animals" class="col-xs-6 col-sm-4">
+
+                <img data-ng-src="animal.picture">
+
+            </div>
+            <!--<div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>-->
+            <!--&lt;!&ndash; Optional: clear the XS cols if their content doesn't match in height &ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="clearfix visible-xs-block"></div>&ndash;&gt;-->
+            <!--<div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>-->
+        <!--</div>-->
+
+        <!--<div class="row">-->
+            <!--<div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>-->
+            <!--<div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>-->
+            <!--&lt;!&ndash; Optional: clear the XS cols if their content doesn't match in height &ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="clearfix visible-xs-block"></div>&ndash;&gt;-->
+            <!--<div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>-->
+        </div>
 
     </div>
   </body>

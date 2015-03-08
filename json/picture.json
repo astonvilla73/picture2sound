@@ -1,0 +1,38 @@
+[
+  {
+    "spelling": "cat",
+    "picture": "images/cat.jpg",
+    "sound": "sounds/Cat meow.wav"
+  },
+
+  {
+    "spelling": "cow",
+    "picture": "images/cow.jpg",
+    "sound": "sounds/Cow.wav"
+  },
+
+  {
+    "spelling": "duck",
+    "picture": "images/duck.jpg",
+    "sound": "sounds/Duck.wav"
+  },
+
+  {
+    "spelling": "horse",
+    "picture": "images/horse.jpg",
+    "sound": "sounds/Horse.wav"
+  },
+
+  {
+    "spelling": "pig",
+    "picture": "images/pig.jpg",
+    "sound": "sounds/Pig.wav"
+  },
+
+  {
+    "spelling": "sheep",
+    "picture": "images/sheep.jpg",
+    "sound": "sounds/Sheep.wav"
+  }
+
+]
