@@ -7,7 +7,7 @@
     }
 }
 
-@media (min-width: 601px) {
+@media (min-width: 641px) {
     .img_holder {
 
         width: 150px !important;
@@ -17,7 +17,7 @@
 }
 
 
-@media (min-width: 901px) {
+@media (min-width: 1101px) {
     .img_holder {
 
         width: 300px !important;
