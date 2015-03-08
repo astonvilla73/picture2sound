@@ -52,7 +52,7 @@
 
         <div class="row row_spacing">
 
-            <div data-ng-repeat="animal in animals.slice(0,3)" class="col-xs-6 col-sm-4">
+            <div data-ng-repeat="animal in animals.slice(0,3)" class="col-xs-4 col-sm-4">
 
                 <img class="img-thumbnail img_holder" data-ng-src="{{animal.picture}} " data-ng-click="say(animal.sound)">
 
@@ -62,7 +62,7 @@
 
         <div class="row row_spacing">
 
-            <div data-ng-repeat="animal in animals.slice(3,6)" class="col-xs-6 col-sm-4">
+            <div data-ng-repeat="animal in animals.slice(3,6)" class="col-xs-4 col-sm-4">
 
                 <img class="img-thumbnail img_holder" data-ng-src="{{animal.picture}}" data-ng-click="say(animal.sound)">
 
@@ -74,7 +74,7 @@
 
     <audio id="player" >
 
-      <source id="sound_src" src="" type="audio/mp3" >
+      <source id="sound_src" src="" >
       <!--<embed src="images/modified.mp3" autostart="false" loop="false" hidden="true" />-->
 
     </audio>

@@ -1,9 +1,31 @@
-.img_holder {
+@media (max-width: 600px) {
+    .img_holder {
 
-    width:300px !important;
-    height:375px !important;
-    overflow:hidden !important;
+        width: 75px !important;
+        height: 100px !important;
+        overflow: hidden !important;
+    }
 }
+
+@media (min-width: 601px) {
+    .img_holder {
+
+        width: 150px !important;
+        height: 190px !important;
+        overflow: hidden !important;
+    }
+}
+
+
+@media (min-width: 901px) {
+    .img_holder {
+
+        width: 300px !important;
+        height: 375px !important;
+        overflow: hidden !important;
+    }
+}
+
 
 .row_spacing {
 
