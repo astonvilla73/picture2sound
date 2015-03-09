@@ -54,7 +54,7 @@
 
             <div data-ng-repeat="animal in animals.slice(0,3)" class="col-xs-4 col-sm-4">
 
-                <img class="img-thumbnail img_holder" data-ng-src="{{animal.picture}} " data-ng-click="say(animal.sound);spelling(animal.spelling)">
+                <img class="img-thumbnail img_holder" data-ng-src="{{animal.picture}} " data-ng-click="say(animal);spelling(animal.spelling)">
 
             </div>
 
@@ -64,7 +64,7 @@
 
             <div data-ng-repeat="animal in animals.slice(3,6)" class="col-xs-4 col-sm-4">
 
-                <img class="img-thumbnail img_holder" data-ng-src="{{animal.picture}}" data-ng-click="say(animal.sound);spelling(animal.spelling)">
+                <img class="img-thumbnail img_holder" data-ng-src="{{animal.picture}}" data-ng-click="say(animal);spelling(animal.spelling)">
 
             </div>
 
@@ -82,10 +82,10 @@
 
             </div>
 
-            <div class="col-xs-10 col-sm-10">
+            <div class="col-xs-8 col-sm-8">
 
                     <blockquote data-ng-show="showSpelling">
-                      <p id="spelling" class="text-center" >Spelling box</p>
+                      <h3 id="spelling" class="text-center" >Spelling box</h3>
                     </blockquote>
 
             </div>
@@ -97,8 +97,7 @@
 
     <audio id="player" >
 
-      <source id="sound_src" src="" >
-      <!--<embed src="images/modified.mp3" autostart="false" loop="false" hidden="true" />-->
+      <source id="sound_src" src="" type="audio">
 
     </audio>
 

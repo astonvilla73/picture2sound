@@ -20,8 +20,8 @@
 @media (min-width: 1101px) {
     .img_holder {
 
-        width: 230px !important;
-        height: 300px !important;
+        width: 220px !important;
+        height: 290px !important;
         overflow: hidden !important;
     }
 }
@@ -30,5 +30,17 @@
 .row_spacing {
 
     margin-top: 15px;
+
+}
+
+blockquote {
+
+    border: solid;
+
+}
+
+#spelling {
+
+    margin: 0;
 
 }

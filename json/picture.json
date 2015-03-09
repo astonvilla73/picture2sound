@@ -2,37 +2,43 @@
   {
     "spelling": "cat",
     "picture": "images/cat.jpg",
-    "sound": "sounds/Cat-meow-mp3.mp3"
+    "sound": "sounds/Cat meow.wav",
+    "soundMp3": "sounds/Cat meow.mp3"
   },
 
   {
     "spelling": "cow",
     "picture": "images/cow.jpg",
-    "sound": "sounds/Cow.wav"
+    "sound": "sounds/Cow.wav",
+    "soundMp3": "sounds/Cow.mp3"
   },
 
   {
     "spelling": "duck",
     "picture": "images/duck.jpg",
-    "sound": "sounds/Duck.wav"
+    "sound": "sounds/Duck.wav",
+    "soundMp3": "sounds/Duck.mp3"
   },
 
   {
     "spelling": "horse",
     "picture": "images/horse.jpg",
-    "sound": "sounds/Horse.wav"
+    "sound": "sounds/Horse.wav",
+    "soundMp3": "sounds/Horse.mp3"
   },
 
   {
     "spelling": "pig",
     "picture": "images/pig.jpg",
-    "sound": "sounds/Pig.wav"
+    "sound": "sounds/Pig.wav",
+    "soundMp3": "sounds/Pig.mp3"
   },
 
   {
     "spelling": "sheep",
     "picture": "images/sheep.jpg",
-    "sound": "sounds/Sheep.wav"
+    "sound": "sounds/Sheep.wav",
+    "soundMp3": "sounds/Sheep.mp3"
   }
 
 ]

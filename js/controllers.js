@@ -19,12 +19,23 @@ angular.module('ngPicture2sound.controllers', [])
 
             });
 
-            $scope.say = function(soundSrc){
+            $scope.say = function(animal){
 
-                //console.log('here');
-
+                var soundSrc = isMsie() ? animal.soundMp3: animal.sound;
                 var audio = angular.element("#player");
+
+                if (isMsie()){
+
+                    angular.element("#sound_src").attr("type", "audio/mp3");
+
+                } else {
+
+                    angular.element("#sound_src").removeAttr("type");
+
+                }
+
                 angular.element("#sound_src").attr("src", soundSrc);
+
                 audio[0].pause();
                 audio[0].load();
                 audio[0].play();
